@@ -6,7 +6,7 @@ def get_functions_data(binary):
     r.cmd('aa')
     afl = r.cmd("afl")
     pdf = r.cmd("pdf")
-    print(pdf)
+    #print(pdf)
     lines = pdf.split("\n")
     functions = []
     counter = 1
@@ -29,25 +29,6 @@ def get_functions_data(binary):
     r.quit()
     return functions
 
-#f = get_functions_data("../Examples/ConsoleApplication1.exe")
-#for i_ in f:
- #   print(f'{i_.offset}  {i_.length}  {i_.name}')
-  #  #print(i_.to_string())
-
-def disassembly(binary):
-    # receive num func
-    r2 = r2pipe.open(binary)
-    r2.cmdj("aaa")  # http://radare.today/posts/analysis-by-default/
-    r2.cmdj("aaa")  # http://radare.today/posts/analysis-by-default/
-
-    function_list = r2.cmdj("aflj")
-    function_list = r2.cmdj("aflj")
-
- #   i=0 # if start 1
-    for function in function_list:
-       # i+=1 # the first num func = 1
-        #if i == num_func:
-            print(r2.cmdj("p8j" + str(function["size"]) + " @ " + function["name"]))
 
 def disassembler(binary, func_dict, func_id):
         r = r2pipe.open(binary)
@@ -61,5 +42,6 @@ def disassembler(binary, func_dict, func_id):
             if ('offset' in line and 'bytes' in line and 'opcode' in line) and (func.offset <= line["offset"]) and (line["offset"]<func_end):
                 #print("Alohomora")
                 assembly_string += f"0x{line['offset']:x}  {line['bytes']}  {line['opcode']}\r\n"
+        r.quit()
         return assembly_string
 

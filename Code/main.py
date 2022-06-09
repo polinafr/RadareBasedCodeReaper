@@ -1,23 +1,21 @@
 import sys
 import Code.FunctionClass
 import Code.Code_sections
-import Disassemblers.ELFDisassembler
-import pe_disassembler
-import pathlib
+import Code.Emulations
 
-def emulate_function(function_dictionary, executable):
-    pass
+
+def emulate_function(function_dictionary, executable, func_index=None):
+    if not func_index:
+        func_index = get_desired_function(function_dictionary)
+    if len(function_dictionary[func_index].params) == 0:
+        Code.Emulations.emulate_function(function_dictionary[func_index], executable)
+    else:
+        Code.Emulations.emulate_function_with_params(function_dictionary[func_index], executable)
+
 
 def show_assembly(function_dictionary, binary):
-    extension = pathlib.Path(binary).suffix
-    #func = None
     func_index = get_desired_function(function_dictionary)
-    func = function_dictionary[func_index]
-    if extension == '.exe':
-        pass
-    elif extension == '.elf':
-        disasm = Disassemblers.ELFDisassembler.ELFDisassembler(binary)
-        print(disasm.get_function_by_address_and_size(func.offset, func.length))
+    print(Code.Code_sections.disassembler(binary, function_dictionary, func_index))
     print("To update the arguments list for the function, enter a\nTo emulate this function, enter e\n"
           "To change the function's name, enter n\nTo disassemble another function, enter d\n"
           "To return to the main menu enter m")

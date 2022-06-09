@@ -40,6 +40,7 @@ def emulate_function_with_params(func, binary):
     r = r2pipe.open(binary)
     addr = "0x"+hex(func.offset)[2:].zfill(8)
     s = 's '+addr
+
     r.cmd(s)
     print(r.cmd("pd"))
     #  initialize stack machine for emulation
