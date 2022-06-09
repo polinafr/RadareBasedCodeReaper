@@ -20,10 +20,17 @@ def get_functions_data(binary):
             #if len(functions) > 1:
             functions.append(f)
             # print(r.cmd("afa"))
+  #  for func in functions:
+   #     r.cmd(f's {hex(func.offset)}')
+    #    #  initialize stack machine for emulation
+     #   r.cmd("aeim")
+      #  registers = r.cmdj("aer")
+       # print(f"*********************************\n{registers}\n*********************")
+
     return functions
 
-#f = get_functions_data("Examples/ConsoleApplication1.exe")
+#f = get_functions_data("../Examples/ConsoleApplication1.exe")
 #for i_ in f:
-   # print(f'{i_.offset}  {i_.length}  {i_.name}')
-    #print(i_.to_string())
+ #   print(f'{i_.offset}  {i_.length}  {i_.name}')
+  #  #print(i_.to_string())
 
