@@ -6,7 +6,7 @@ def emulate_function(func, binary):
     addr = "0x"+hex(func.offset)[2:].zfill(8)
     #print(addr)
     s = 's '+addr
-    print(s)
+    #print(s)
     r.cmd(s)
     #r.cmd("s 0x00400400")
     print(r.cmd("pd"))
@@ -14,21 +14,24 @@ def emulate_function(func, binary):
     r.cmd("aeim")
     print("stack machine created")
     #  working commands: 'ar,' - table view; 'ar' - register and value
-    #if show_reg:
     print(r.cmd("ar"))
     print(r.cmd("ad@r:SP"))
-    print(r.cmd("ad@r:SP"))
+    #print(r.cmd("ad@r:SP"))
    # print("aeim")
     #registers = r.cmd("aer")
     #print(registers)
-    aesu = 'aesu 0x' + hex(func.offset + 6)[2:].zfill(8)
-    print(aesu)
+    aesu = 'aesu 0x' + hex(func.offset + func.length + 1)[2:].zfill(8)
+    #print(aesu)
     #  emulate from the start of the func until specified address
-    r.cmd(aesu)
-    #if show_reg:
-    print(r.cmd("ar"))
-    print(r.cmd("ad@r:SP"))
-    print(r.cmd("ad@r:SP"))
+    print(r.cmd(aesu))
+    print("HI")
+    #print(r.cmd())
+    ar = r.cmdj("ar")
+    print("Expelliarmus")
+    s1 = r.cmd("ad@r:SP")
+    print("Lumos")
+    s2 = r.cmd("ad@r:SP")
+    print("Bye")
 
 
 def show_env_data(r, show_reg, show_st):
