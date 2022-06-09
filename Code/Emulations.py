@@ -20,35 +20,16 @@ def emulate_function(func, binary):
    # print("aeim")
     #registers = r.cmd("aer")
     #print(registers)
-   # aesu = 'aesu 0x' + hex(func.offset + func.length)[2:].zfill(8)
+    aesu = 'aesu 0x' + hex(func.offset + func.length-1)[2:].zfill(8)
     #print(aesu)
     #  emulate from the start of the func until specified address
     print(r.cmd(aesu))
     print("HI")
     #print(r.cmd())
-    ar = r.cmd("ar")
+    print(r.cmd("ar"))
     print("Expelliarmus")
-    s1 = r.cmd("ad@r:SP")
-    print("Lumos")
-    s2 = r.cmd("ad@r:SP")
-    print("Bye")
-
-
-def show_env_data(r, show_reg, show_st):
-    if show_reg:
-        show_registers(r)
-    if show_st:
-        show_stack(r)
-
-
-def show_stack(r):
-    print("The stack values are:")
     print(r.cmd("ad@r:SP"))
-
-
-def show_registers(r):
-    print("The register values now are:")
-    registers = r.cmd("ar,")
-    print(registers)
-
+    print("Lumos")
+    print(r.cmd("ad@r:SP"))
+    print("Bye")
 
