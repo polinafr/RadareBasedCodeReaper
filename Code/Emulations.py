@@ -47,9 +47,11 @@ def emulate_function_with_params(func, binary):
     r.cmd("aeim")
     for reg in func.params:
         r.cmd(f'aer {reg} = {func.params[reg]}')
+
     #  working commands: 'ar,' - table view; 'ar' - register and value
     print(r.cmd("ar"))
     print(r.cmd("ad@r:SP"))
+
     aesu = 'aesu 0x' + hex(func.offset + func.length-1)[2:].zfill(8)
     #  emulate from the start of the func until specified address
     print(r.cmd(aesu))

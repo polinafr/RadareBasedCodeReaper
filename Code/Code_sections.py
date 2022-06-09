@@ -31,6 +31,7 @@ def get_functions_data(binary):
 
 
 def disassembler(binary, func_dict, func_id):
+
         r = r2pipe.open(binary)
         jinstr = r.cmdj("pdj")
         jinstr = r.cmdj("pdj")

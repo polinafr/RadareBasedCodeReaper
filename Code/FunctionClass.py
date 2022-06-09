@@ -24,4 +24,7 @@ class Function:
      #       self.add_arg(arg)
 
     def to_string(self):
-        return f'{self.offset}  {self.length}  {self.name}  {self.params}  {self.params} \n'
+        off = hex(self.offset)
+        #print(off)
+        tmp = f"Offset: {off}  Length: {self.length}  Name: {self.name}  Parameters known to the program: {self.params}"
+        return tmp

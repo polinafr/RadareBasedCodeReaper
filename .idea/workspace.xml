@@ -4,6 +4,8 @@
     <list default="true" id="3a5972ab-72d8-4fca-9dcf-2d08dccb861a" name="Default Changelist" comment="git add .">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/Code_sections.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Code_sections.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/Emulations.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Emulations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/FunctionClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/FunctionClass.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/testing_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/testing_driver.py" afterDir="false" />
     </list>
@@ -84,6 +86,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="FunctionClass" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CodeReaperV2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/FunctionClass.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="CodeReaperV2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,6 +120,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testing_driver (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CodeReaperV2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/testing_driver.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -131,10 +175,14 @@
       <item itemvalue="Python.Emulations" />
       <item itemvalue="Python.Code_sections" />
       <item itemvalue="Python.testing_driver" />
+      <item itemvalue="Python.FunctionClass" />
+      <item itemvalue="Python.testing_driver (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.testing_driver" />
+        <item itemvalue="Python.testing_driver (1)" />
+        <item itemvalue="Python.FunctionClass" />
         <item itemvalue="Python.Code_sections" />
         <item itemvalue="Python.Emulations" />
       </list>
