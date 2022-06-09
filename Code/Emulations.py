@@ -33,6 +33,7 @@ def emulate_function(func, binary):
     #print("Lumos")
     print(r.cmd("ad@r:SP"))
     #print("Bye")
+    r.quit()
 
 
 def emulate_function_with_params(func, binary):
@@ -54,3 +55,4 @@ def emulate_function_with_params(func, binary):
     print(r.cmd("ar"))
     print(r.cmd("ad@r:SP"))
     print(r.cmd("ad@r:SP"))
+    r.quit()
