@@ -12,7 +12,7 @@ def emulate_function(func, binary):
     print(r.cmd("pd"))
     #  initialize stack machine for emulation
     r.cmd("aeim")
-    print("stack machine created")
+    #print("stack machine created")
     #  working commands: 'ar,' - table view; 'ar' - register and value
     print(r.cmd("ar"))
     print(r.cmd("ad@r:SP"))
@@ -20,13 +20,13 @@ def emulate_function(func, binary):
    # print("aeim")
     #registers = r.cmd("aer")
     #print(registers)
-    aesu = 'aesu 0x' + hex(func.offset + func.length)[2:].zfill(8)
+   # aesu = 'aesu 0x' + hex(func.offset + func.length)[2:].zfill(8)
     #print(aesu)
     #  emulate from the start of the func until specified address
     print(r.cmd(aesu))
     print("HI")
     #print(r.cmd())
-    ar = r.cmdj("ar")
+    ar = r.cmd("ar")
     print("Expelliarmus")
     s1 = r.cmd("ad@r:SP")
     print("Lumos")
