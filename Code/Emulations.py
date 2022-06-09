@@ -20,7 +20,7 @@ def emulate_function(func, binary):
    # print("aeim")
     #registers = r.cmd("aer")
     #print(registers)
-    aesu = 'aesu 0x' + hex(func.offset + func.length + 1)[2:].zfill(8)
+    aesu = 'aesu 0x' + hex(func.offset + func.length)[2:].zfill(8)
     #print(aesu)
     #  emulate from the start of the func until specified address
     print(r.cmd(aesu))
