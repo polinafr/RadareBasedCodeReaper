@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3a5972ab-72d8-4fca-9dcf-2d08dccb861a" name="Default Changelist" comment="git add .">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Code_sections.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Code_sections.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/Emulations.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Emulations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/FunctionClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/FunctionClass.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/testing_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/testing_driver.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
